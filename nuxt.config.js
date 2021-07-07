@@ -2,7 +2,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: 'http://github.com/AlbertoAlfredo/Eyevision'
+    base: 'http://albertoalfredo.github.io/Eyevision/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head

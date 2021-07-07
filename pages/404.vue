@@ -1,7 +1,5 @@
 <template>
-<div>
-  <h1>Teste</h1>
-</div>
+  <h1>Página não encontrada</h1>
 </template>
 
 <script lang="ts">

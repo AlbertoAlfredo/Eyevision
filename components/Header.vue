@@ -1,14 +1,20 @@
 <template>
-  <header>
+  <header id="navbar1">
     <div class="banner">
-      <img class="banner-img" src="~/assets/images/bannerTopo.png" />
+        <img class="banner-img" src="~/assets/images/bannerTopo.png" />
       <div class="navbar">
         <img class="banner-logo" src="~/assets/images/logoEyevison.png" alt=""/>
-        <div class="navbarLink">sdf</div>
-        <div class="navbarLink">adf</div>
-        <div class="navbarLink">asf</div>
-        <div class="navbarLink">afs</div>
-        <div class="navbarLink">asfas</div>
+        <ul class="navbar-list">
+          <li class="navbar-link"><a href="#home">HOME</a></li>
+          <li class="navbar-link">::</li>
+          <li class="navbar-link"><a href="#produto">PRODUTOS</a></li>
+          <li class="navbar-link">::</li>
+          <li class="navbar-link"><a href="#case">CASE</a></li>
+          <li class="navbar-link">::</li>
+          <li class="navbar-link"><a href="#quemsomos">QUEM SOMOS</a></li>
+          <li class="navbar-link">::</li>
+          <li class="navbar-link"><a href="#news">NEWS</a></li>
+        </ul>
       </div>
     </div>
   </header>
@@ -17,10 +23,13 @@
 <script lang="ts">
 import Vue from 'vue'
 
+
+
 export default Vue.extend({})
 </script>
 
 <style scoped>
+
   .banner {
     width: 100vw;
     }
@@ -32,9 +41,24 @@ export default Vue.extend({})
   }
   .navbar{
     margin: 7vw 7vw;
+    height: 45vw;
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar-list{
+    margin-left: 15vw;
+    display: inline-flex;
+
+  }
+  .navbar-link, .navbar-link > a{
+    color: #fff;
+    text-align: right;
+    font-size: 1.6vw;
+    list-style-type: none;
   }
   .banner-logo{
     width: 30vw;
+    height: 20vh;
 
   }
 </style>

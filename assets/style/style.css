@@ -2,3 +2,6 @@
   --main-color: rgb(20,73,137);
   --main-color-dark: rgb(22,53,95);
 }
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}

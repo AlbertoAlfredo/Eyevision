@@ -5,7 +5,16 @@ export default {
   //   base: 'http://albertoalfredo.github.io/Eyevision/'
   // },
   router: {
-    base: './'
+    base: '/'
+  },
+  build: {
+    extend (config, { isDev, isClient }) {
+      if (!isDev) {
+        // relative links, please.
+        config.output.publicPath = './_nuxt/'
+      }
+      return config;
+    }
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head

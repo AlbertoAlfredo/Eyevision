@@ -6,6 +6,16 @@
         <div class="fundo-imagem-produtos">
 
         </div>
+        <div class="fundo-imagem-produtos">
+
+        </div>
+        <div class="fundo-imagem-produtos">
+
+        </div>
+        <div class="fundo-imagem-produtos">
+
+        </div>
+
       </div>
     </section>
     <div id="case" class="container">

@@ -7,16 +7,6 @@ export default {
   router: {
     base: '/'
   },
-  build: {
-    extend (config, { isDev, isClient }) {
-      if (!isDev) {
-        // relative links, please.
-        // config.output.publicPath = 'https://albertoalfredo.github.io/Eyevision/_nuxt/';
-        config.output.base = "http://albertoalfredo.github.io/Eyevision/"
-      }
-      return config;
-    }
-  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -60,5 +50,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    extend (config, { isDev }) {
+      if (!isDev) {
+        // relative links, please.
+        config.output.publicPath = 'https://albertoalfredo.github.io/Eyevision/_nuxt/';
+      }
+      return config;
+    }
+  },
 }

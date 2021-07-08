@@ -6,7 +6,7 @@ export default {
   // },
   router: {
     mode: 'hash',
-    base: '/'
+    base: 'http://albertoalfredo.github.io/Eyevision/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head

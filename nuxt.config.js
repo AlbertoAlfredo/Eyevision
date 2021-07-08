@@ -5,6 +5,7 @@ export default {
   //   base: 'http://albertoalfredo.github.io/Eyevision/'
   // },
   router: {
+    mode: 'hash',
     base: '/'
   },
 
@@ -50,9 +51,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-
-      publicPath: 'http://albertoalfredo.github.io/Eyevision/'
-
 
   },
 }

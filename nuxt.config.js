@@ -12,7 +12,7 @@ export default {
       if (!isDev) {
         // relative links, please.
         // config.output.publicPath = 'https://albertoalfredo.github.io/Eyevision/_nuxt/';
-        config.output.base = "./_nuxt/"
+        config.output.base = "http://albertoalfredo.github.io/Eyevision/"
       }
       return config;
     }

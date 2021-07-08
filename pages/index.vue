@@ -15,6 +15,9 @@
         <div class="fundo-imagem-produtos">
 
         </div>
+        <div class="fundo-imagem-produtos">
+
+        </div>
 
       </div>
     </section>

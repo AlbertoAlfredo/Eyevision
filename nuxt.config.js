@@ -7,15 +7,15 @@ export default {
   router: {
     base: '/'
   },
-  build: {
-    extend (config, { isDev, isClient }) {
-      if (!isDev) {
-        // relative links, please.
-        config.output.publicPath = '.'
-      }
-      return config;
-    }
-  },
+  // build: {
+  //   extend (config, { isDev, isClient }) {
+  //     if (!isDev) {
+  //       // relative links, please.
+  //       config.output.publicPath = './'
+  //     }
+  //     return config;
+  //   }
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

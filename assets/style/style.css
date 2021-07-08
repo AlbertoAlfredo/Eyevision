@@ -5,3 +5,12 @@
 a, a:hover, a:visited, a:active {
   text-decoration: none;
 }
+.container {
+  width: auto;
+  padding: 12vh 10vw;
+}
+.container-fluid {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}

@@ -1,9 +1,12 @@
 <template>
-  <header id="navbar1">
+  <header id="home">
     <div class="banner">
         <img class="banner-img" src="~/assets/images/bannerTopo.png" />
-      <div class="navbar">
-        <img class="banner-logo" src="~/assets/images/logoEyevison.png" alt=""/>
+      <nav class="navbar">
+        <div class="banner-logo">
+          <img class="banner-logo-img" src="~/assets/images/logoEyevison.png" alt=""/>
+        </div>
+
         <ul class="navbar-list">
           <li class="navbar-link"><a href="#home">HOME</a></li>
           <li class="navbar-link">::</li>
@@ -15,7 +18,7 @@
           <li class="navbar-link">::</li>
           <li class="navbar-link"><a href="#news">NEWS</a></li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
 </template>
@@ -56,9 +59,15 @@ export default Vue.extend({})
     font-size: 1.6vw;
     list-style-type: none;
   }
+  .navbar-link > a{
+    white-space: nowrap;
+  }
   .banner-logo{
     width: 30vw;
-    height: 20vh;
-
+    height: auto;
+  }
+  .banner-logo-img{
+    width: 100%;
+    height: auto;
   }
 </style>

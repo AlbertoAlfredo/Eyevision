@@ -50,9 +50,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    router: {
-      base: 'http://albertoalfredo.github.io/Eyevision/'
-    },
+
+      publicPath: 'http://albertoalfredo.github.io/Eyevision/'
+
 
   },
 }

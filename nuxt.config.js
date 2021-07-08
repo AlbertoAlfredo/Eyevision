@@ -1,14 +1,16 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  // router: {
-  // mode: 'hash',
-  //   base: 'http://albertoalfredo.github.io/Eyevision/'
-  // },
+  // Devido a problemas com o github pages mudar o router para o de cima na hora do deploy e depois voltar ao anterior
   router: {
-    mode: 'hash',
-    base: '/'
+  mode: 'hash',
+    base: 'http://albertoalfredo.github.io/Eyevision/'
   },
+  // router: {
+  //   mode: 'hash',
+  //   base: '/'
+  // },
+
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {

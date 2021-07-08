@@ -1,22 +1,10 @@
 <template>
-  <div>
+  <div id="app">
     <section id="produtos" class="container">
       <h1 class="titulo-produtos">Produtos</h1>
       <div class="container-flex-inline">
-        <div class="fundo-imagem-produtos">
-
-        </div>
-        <div class="fundo-imagem-produtos">
-
-        </div>
-        <div class="fundo-imagem-produtos">
-
-        </div>
-        <div class="fundo-imagem-produtos">
-
-        </div>
-        <div class="fundo-imagem-produtos">
-
+        <div v-for="(produto, index) in produtos" :key="index" class="fundo-imagem-produtos">
+          {{produto}}
         </div>
 
       </div>
@@ -35,8 +23,15 @@
 
 <script lang="ts">
 import Vue from "vue";
+export default Vue.extend({
+  data: function () {
 
-export default Vue.extend({});
+    return {
+      produtos: [ "01", "02", "03", "04" ]
+    }
+  }
+});
+
 </script>
 
 <style>
@@ -46,6 +41,8 @@ export default Vue.extend({});
   .container-flex-inline {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items:center;
   }
   .titulo-produtos {
     text-align: center;
@@ -53,8 +50,8 @@ export default Vue.extend({});
   }
   .fundo-imagem-produtos {
     background-color: var(--main-color);
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 20vw;
     border-radius: 10px;
     border: 3px solid #fff;
   }

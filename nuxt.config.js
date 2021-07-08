@@ -11,7 +11,8 @@ export default {
     extend (config, { isDev, isClient }) {
       if (!isDev) {
         // relative links, please.
-        config.output.publicPath = 'https://albertoalfredo.github.io/Eyevision/_nuxt/'
+        // config.output.publicPath = 'https://albertoalfredo.github.io/Eyevision/_nuxt/';
+        config.output.base = "./_nuxt/"
       }
       return config;
     }

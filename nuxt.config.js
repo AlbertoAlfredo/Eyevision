@@ -4,7 +4,7 @@ export default {
   // Devido a problemas com o github pages mudar o router para o de cima na hora do deploy e depois voltar ao anterior
   router: {
   mode: 'hash',
-    base: '/<Eyevision>/'
+    base: '/Eyevision/'
   },
   //Apos o deploy use a de baixo
   // router: {

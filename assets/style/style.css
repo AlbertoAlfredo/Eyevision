@@ -14,3 +14,37 @@ a, a:hover, a:visited, a:active {
   margin: 0px;
   padding: 0px;
 }
+hr {
+  border: none;
+  height: 2vh;
+}
+h1{
+  font-size: 3vw;
+  padding: 0px;
+  margin: 0px;
+}
+h2{
+  font-size: 2.6vw;
+  padding: 0px;
+  margin: 0px;
+}
+h3{
+  font-size: 2.1vw;
+  padding: 0px;
+  margin: 0px;
+}
+h4{
+  font-size: 1.6vw;
+  padding: 0px;
+  margin: 0px;
+}
+h5{
+  font-size: 1.1vw;
+  padding: 0px;
+  margin: 0px;
+}
+p{
+  font-size: 1.1vw;
+  padding: 0px;
+  margin: 0px;
+}

@@ -6,6 +6,7 @@ export default {
   mode: 'hash',
     base: 'http://albertoalfredo.github.io/Eyevision/'
   },
+  //Apos o deploy use a de baixo
   // router: {
   //   mode: 'hash',
   //   base: '/'
@@ -34,6 +35,10 @@ export default {
     '~/assets/style/normalize',
     '~/assets/style/style'
   ],
+  // Config for Nuxt img
+  image: {
+    dir: 'assets/images'
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -46,14 +51,17 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxt/image',
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-
+    devtool: true,
+    debugger: true,
   },
 }

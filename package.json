@@ -17,6 +17,7 @@
     "push-dir": "^0.4.1"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.5.0",
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0"
   }

@@ -86,6 +86,7 @@ export default Vue.extend({
   .fundo-imagem-cases{
     display: flex;
     flex-direction: column;
+    background-color: #fff;
     align-items: center;
     width: 18vw;
     height: 20vw;

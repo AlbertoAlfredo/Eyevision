@@ -12,6 +12,8 @@ export default {
   //   base: '/'
   // },
 
+//Lembrar de fazer o predeploy (nuxt build, nuxt generate), antes de mudar as configurações para subir para o github
+
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -37,8 +39,7 @@ export default {
   ],
   // Config for Nuxt img
   image: {
-    dir: 'static/images',
-    staticFilename: '/images/[name][ext]'
+    dir: 'assets/images',
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

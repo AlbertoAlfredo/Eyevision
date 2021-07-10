@@ -14,7 +14,7 @@
       <hr/>
       <div class="container-flex-inline">
         <div v-for="(caso, index) in cases" :key="index" class="fundo-imagem-cases">
-          <nuxt-img :src="caso.img" class="imagem-cases" sizes="md:17vw" alt="" />
+          <nuxt-img :src="caso.img" class="imagem-cases" alt="" />
           <hr/>
           <div class="texto-cases">
             <h2 class="titulo-case">{{caso.titulo}}</h2>
@@ -94,6 +94,8 @@ export default Vue.extend({
   }
   .imagem-cases{
     border-radius: 10px;
+    width: 17vw;
+    height: auto;
   }
   .texto-cases{
     padding: 0 0.8vw;

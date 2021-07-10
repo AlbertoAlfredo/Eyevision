@@ -38,7 +38,7 @@ export default {
   // Config for Nuxt img
   image: {
     dir: 'static/images',
-    staticFilename: '[publicPath]/images/[name]-[hash][ext]'
+    staticFilename: '/images/[name][ext]'
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -52,7 +52,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
-    '@nuxt/image',
+    '@nuxt/image'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -64,5 +64,6 @@ export default {
   build: {
     devtool: true,
     debugger: true,
+
   },
 }

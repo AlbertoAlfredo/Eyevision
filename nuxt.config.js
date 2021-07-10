@@ -37,7 +37,8 @@ export default {
   ],
   // Config for Nuxt img
   image: {
-    dir: 'assets/images'
+    dir: 'static/images',
+    staticFilename: '[publicPath]/images/[name]-[hash][ext]'
   },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

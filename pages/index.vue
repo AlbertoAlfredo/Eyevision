@@ -57,7 +57,7 @@
     <div id="contato" class="container">
       <div class="container-quemsomos" style="flex-direction:row-reverse;">
         <div class="texto-quemsomos" style="text-align: left;">
-          <h1 style="font-size: 4vw;">Contato</h1>
+          <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
           <iframe style="width: 40vw; height: 60vw;" src="https://docs.google.com/forms/d/e/1FAIpQLSf76vHwaygqk-fbpnyQVlSHdAegrj_3ATpd6QoWBOxTAtuNjQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
         </div>
         <div class="imagem-quemsomos">

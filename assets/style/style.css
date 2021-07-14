@@ -1,6 +1,51 @@
+@font-face {
+  font-family: 'agency';
+  font-weight: bold;
+  src: url("~assets/fonts/AGENCYB.TTF");
+}
+@font-face {
+  font-family: 'agency';
+  src: url("~assets/fonts/AGENCYR.TTF");
+}
+@font-face {
+  font-family: 'agencyfb';
+  src: url('~assets/fonts/agencyfb-regular.otf');
+}
+@font-face {
+  font-family: 'NeoSans';
+  font-weight: bold;
+  src: url('~assets/fonts/NeoSansStdBold.otf');
+}
+@font-face {
+  font-family: 'NeoSans';
+  src: url('~assets/fonts/NeoSansStdRegular.otf');
+}
+@font-face {
+  font-family: 'NeoSans';
+  font-weight: lighter;
+  src: url('~assets/fonts/NeoSansStdLight.otf');
+}
+@font-face {
+  font-family: 'NeoTech';
+  font-weight: bold;
+  src: url('~assets/fonts/NeoTechStd-Bold.otf');
+}
+@font-face {
+  font-family: 'NeoTech';
+  font-weight: medium;
+  src: url('~assets/fonts/NeoTechStd-Medium.otf');
+}
+@font-face {
+  font-family: 'NeoTech';
+  src: url('~assets/fonts/NeoTechStd-Regular.otf');
+}
 :root {
   --main-color: rgb(20,73,137);
   --main-color-dark: rgb(22,53,95);
+  --main-font-bold: agencyBold;
+  --main-font: agency;
+  --secondary-font: NeoSans;
+  --thirdy-font: Neotech;
 }
 a, a:hover, a:visited, a:active {
   text-decoration: none;
@@ -13,6 +58,9 @@ a, a:hover, a:visited, a:active {
   width: 100%;
   margin: 0px;
   padding: 0px;
+}
+h1, h2, h3, h4, h5, p, a {
+  font-family: var(--main-font), sans-serif;
 }
 hr {
   border: none;

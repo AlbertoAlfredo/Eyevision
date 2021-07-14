@@ -1,7 +1,7 @@
 <template>
   <header id="home">
     <div class="banner">
-        <img class="banner-img" src="~/assets/images/bannerTopo.png" />
+        <img class="banner-img" src="~/assets/images/BannerCortado.png" />
       <nav class="navbar">
         <div class="banner-logo">
           <img class="banner-logo-img" src="~/assets/images/logoEyevison.png" alt=""/>
@@ -10,7 +10,7 @@
         <ul class="navbar-list">
           <li class="navbar-link"><a href="#home">HOME</a></li>
           <li class="navbar-link">::</li>
-          <li class="navbar-link"><a href="#produto">PRODUTOS</a></li>
+          <li class="navbar-link"><a href="#produtos">PRODUTOS</a></li>
           <li class="navbar-link">::</li>
           <li class="navbar-link"><a href="#case">CASE</a></li>
           <li class="navbar-link">::</li>

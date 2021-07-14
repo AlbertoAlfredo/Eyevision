@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <section id="produtos" class="container">
-      <h1 class="titulo-produtos">Produtos</h1>
+      <h1 class="titulo-produtos">PRODUTOS</h1>
       <div class="container-flex-inline">
         <div v-for="(produto, index) in produtos" :key="index" class="fundo-imagem-produtos">
           {{produto.name}}
@@ -9,8 +9,8 @@
 
       </div>
     </section>
-    <section id="case" class="container">
-      <h1 class="titulo-produtos">Cases</h1>
+    <section id="case" class="container container-pf0">
+      <h1 class="titulo-produtos">CASE</h1>
       <hr/>
       <div class="container-flex-inline">
         <div v-for="(caso, index) in cases" :key="index" class="fundo-imagem-cases">
@@ -23,8 +23,31 @@
         </div>
       </div>
     </section>
-    <div id="quemsomos" class="container">
-      <h1>Produtos</h1>
+    <div id="quemsomos" class="container container-pt0">
+      <div class="container-quemsomos">
+        <div class="texto-quemsomos">
+          <h1>QUEM SOMOS</h1>
+          <h2>A INOVAÇÃO EM<br/>UM SIMPLES<br/>PISCAR DE OLHOS</h2>
+          <p>
+          A EYEVISION Midias interativas é uma empresa que desenvolve soluções interativas e inovadoras que utilizam Inteligência Artificial e Visão Computacional para inovar a experiência de compra do consumidor. Nossas soluções ajudam empresas a divulgar produtos, marcas e serviços de forma inovadora, criativa imteligente e impactante.<br/>
+          Além disso conseguimos mensurar o fluxo de pessoas e o nivel de satisfação dos clientes através da análise das expressões faciais entre outros.
+          </p>
+        </div>
+        <div class="imagem-quemsomos">
+          <nuxt-img src="/robo01.png" class="img-imagem-quemsomos" />
+        </div>
+      </div>
+      <div v-for="(indv, index) in equipe" :key="index" class="avatar-quemsomos-container">
+        <div class="avatar-quemsomos">
+          <div class="img-avatar">
+          <nuxt-img class="avatar-img" :src="indv.img" :alt="indv.alt" />
+          </div>
+          <div class="texto-avatar">
+          <h3 class="titulo-avatar">{{indv.titulo}}</h3>
+          <img src="~assets/images/logo_in.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
     <div id="news" class="container">
       <h1>Produtos</h1>
@@ -49,6 +72,13 @@ export default Vue.extend({
         {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
         {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
         {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
+      ],
+      equipe: [
+        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds"},
+        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds"},
+        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds"},
+        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds"},
+        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds"},
       ]
     }
   }
@@ -83,6 +113,9 @@ export default Vue.extend({
     background-size: 100%;
     height: 58vw;
   }
+  .container-pf0{
+    padding-bottom: 0px;
+  }
   .fundo-imagem-cases{
     display: flex;
     flex-direction: column;
@@ -111,6 +144,52 @@ export default Vue.extend({
   .paragrafo-case{
     padding: 0px;
     margin: 0px;
+  }
+  .container-quemsomos{
+    display: flex;
+    flex-direction: row;
+  }
+  .container-pt0 {
+    padding-top: 0;
+  }
+  .texto-quemsomos{
+    display: flex;
+    flex-direction:column;
+    width: 40vw;
+    padding-right: 2vw;
+    padding-top: 4vh;
+    text-align: right;
+  }
+  .texto-quemsomos h1 {
+    font-size:2vw;
+    color: var(--main-color);
+  }
+  .texto-quemsomos h2 {
+    font-size:5vw;
+    color: var(--main-color)
+  }
+  .texto-quemsomos p {
+    font-size:2vw;
+    font-family: var(--thirdy-font);
+  }
+  .imagem-quemsomos{
+    width: 20vw;
+    margin-right: 10vw;
+  }
+  .img-imagem-quemsomos{
+    width: 100%;
+    height: auto;
+  }
+  .titulo-avatar{
+    font-size: 3vw;
+  }
+  .img-avatar{
+    width: 20vw;
+    height: auto;
+  }
+  .avatar-img{
+    width: 100%;
+    height: auto;
   }
   hr{
     height: 4vh;

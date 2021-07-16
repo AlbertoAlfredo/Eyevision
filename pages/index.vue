@@ -34,11 +34,13 @@
           Além disso conseguimos mensurar o fluxo de pessoas e o nivel de satisfação dos clientes através da análise das expressões faciais entre outros.
           </p>
         </div>
+        <Carousel />
         <div class="imagem-quemsomos">
           <nuxt-img src="/robo01.png" class="img-imagem-quemsomos" />
         </div>
       </div>
       <hr />
+
       <div class="container-quemsomos-equipe">
         <div v-for="(indv, index) in equipe" :key="index" class="avatar-quemsomos-container">
         <a :href="indv.linkedin">
@@ -89,11 +91,12 @@ export default Vue.extend({
         {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
       ],
       equipe: [
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds", linkedin: "#"},
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds", linkedin: "#"},
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds", linkedin: "#"},
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds", linkedin: "#"},
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds", linkedin: "#"},
+        {img: "fernando.png", alt: "", titulo: "FERNANDO EDUARDO DA SILVA", linkedin: "#"},
+        {img: "flavio.png", alt: "", titulo: "FLAVIO HENRIQUE DA SILVA", linkedin: "#"},
+        {img: "giovani.png", alt: "", titulo: "GIOVANI BERTOLLA SAMPAIO", linkedin: "#"},
+        {img: "michel.png", alt: "", titulo: "MICHEL SEHN", linkedin: "#"},
+        {img: "junior.png", alt: "", titulo: "JUNIOR ODPPIS", linkedin: "#"},
+        {img: "AlbertoPeB.jpeg", alt: "", titulo: "Alberto Alfredo", linkedin: "#"},
       ]
     }
   }
@@ -224,7 +227,7 @@ export default Vue.extend({
     margin: 10px;
   }
   .titulo-avatar{
-    font-size: 2.5vw;
+    font-size: 2.1vw;
     color: var(--main-color);
   }
   .avatar-img{
@@ -234,7 +237,7 @@ export default Vue.extend({
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .img-avatar{
-    width: 13vw;
+    width: 11vw;
     height: auto;
     transition: all 0.3s ease-out;
     margin-bottom: 1vh;
@@ -245,11 +248,11 @@ export default Vue.extend({
   }
   .texto-avatar{
     display: flex;
-    width: 13vw;
+    width: 11vw;
   }
   .icone-quemsomos{
-    width: 3vw;
-    height: 3vw;
+    width: 2.3vw;
+    height: 2.3vw;
   }
   hr{
     height: 4vh;

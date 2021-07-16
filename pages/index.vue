@@ -227,14 +227,21 @@ export default Vue.extend({
     font-size: 2.5vw;
     color: var(--main-color);
   }
-  .img-avatar{
-    width: 13vw;
-    height: auto;
-  }
   .avatar-img{
     width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  .img-avatar{
+    width: 13vw;
+    height: auto;
+    transition: all 0.3s ease-out;
+    margin-bottom: 1vh;
+  }
+
+  .img-avatar:hover{
+    transform: scale(1.2, 1.2);
   }
   .texto-avatar{
     display: flex;

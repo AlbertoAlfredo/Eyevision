@@ -2,9 +2,10 @@
   <div id="app">
     <section id="produtos" class="container">
       <h1 class="titulo-produtos">PRODUTOS</h1>
+      <hr />
       <div class="container-flex-inline">
         <div v-for="(produto, index) in produtos" :key="index" class="fundo-imagem-produtos">
-          {{produto.name}}
+          <nuxt-img :src="produto.img" class="imagem-produtos" :alt="produto.nome" />
         </div>
 
       </div>
@@ -76,10 +77,10 @@ export default Vue.extend({
 
     return {
       produtos: [
-        {img: "01", name: "01"},
-        {img: "02", name: "02"},
-        {img: "03", name: "03"},
-        {img: "04", name: "04"},
+        {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica"},
+        {img: "projecao.jpeg", name: "Projeção Holográfica"},
+        {img: "promotor.jpeg", name: "Promotor Hologrgáfico"},
+        {img: "analitics.jpeg", name: "Analitics"},
         ],
       cases: [
         {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
@@ -116,10 +117,23 @@ export default Vue.extend({
   }
   .fundo-imagem-produtos {
     background-color: var(--main-color);
-    width: 15vw;
-    height: 20vw;
-    border-radius: 10px;
-    border: 3px solid #fff;
+    align-items: center;
+    text-align: center;
+    margin: 0 1vw 0 1vw;
+    width: 17vw;
+    height: 19.7vw;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  .imagem-produtos {
+    width: 87%;
+    padding: 1vw;
+    border-radius: 30px;
+    transition: all 0.3s ease-out;
+  }
+  .imagem-produtos:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   #case {
     background-image: url("~assets/images/fundoMeio.png");
@@ -135,14 +149,21 @@ export default Vue.extend({
     flex-direction: column;
     align-items: center;
     width: 18vw;
-    height: 20vw;
+    height: 25vw;
     border-radius: 10px;
     padding: 0.8vh 1.5vw;
+
   }
   .imagem-cases{
     border-radius: 10px;
     width: 17vw;
     height: auto;
+    transition: all 0.3s ease-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  .imagem-cases:hover {
+    transform: scale(1.2, 1.2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .texto-cases{
     padding: 0 0.8vw;

@@ -13,13 +13,23 @@
     <section id="case" class="container container-pf0">
       <h1 class="titulo-produtos">CASE</h1>
       <hr/>
-      <div class="container-flex-inline">
+      <div v-if="cases[0].img !== ''" class="container-flex-inline">
         <div v-for="(caso, index) in cases" :key="index" class="fundo-imagem-cases">
           <nuxt-img :src="caso.img" class="imagem-cases" alt="" />
           <hr/>
           <div class="texto-cases">
             <h2 class="titulo-case">{{caso.titulo}}</h2>
             <p class="paragrafo-case">{{caso.text}}</p>
+          </div>
+        </div>
+      </div>
+      <div v-if="cases[0].img == ''" class="container-flex-inline">
+        <div v-for="n in 4" :key="n" class="fundo-imagem-cases">
+          <div class="quadrado-branco"></div>
+          <hr/>
+          <div class="texto-cases">
+            <h2 class="titulo-case">Lorem ipsum dolor sit amet</h2>
+            <p class="paragrafo-case">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
       </div>
@@ -85,10 +95,7 @@ export default Vue.extend({
         {img: "analitics.jpeg", name: "Analitics"},
         ],
       cases: [
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
-        {img: "teste.png", alt: "", titulo: "Mussum Ipsum, cacilds vidis litro abertis.", text: "Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in eros commodo tempor."},
+        {img: "", alt: "", titulo: "", text: ""},
       ],
       equipe: [
         {img: "fernando.png", alt: "", titulo: "FERNANDO EDUARDO DA SILVA", linkedin: "#"},
@@ -125,13 +132,13 @@ export default Vue.extend({
     margin: 0 1vw 0 1vw;
     width: 17vw;
     height: 19.7vw;
-    border-radius: 30px;
+    border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .imagem-produtos {
     width: 87%;
     padding: 1vw;
-    border-radius: 30px;
+    border-radius: 20px;
     transition: all 0.3s ease-out;
   }
   .imagem-produtos:hover {
@@ -178,6 +185,12 @@ export default Vue.extend({
     margin: 0px;
     font-weight: normal;
     color: var(--main-color);
+  }
+  .quadrado-branco{
+    width: 17vw;
+    height: 18vw;
+    background-color: #fff;
+    border-radius: 20px;
   }
   .paragrafo-case{
     padding: 0px;

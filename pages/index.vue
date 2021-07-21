@@ -83,9 +83,8 @@
 </template>
 
 <script lang="ts">
-window.alert("Em construção")
 import Vue from "vue";
-export default Vue.extend({
+var site = Vue.extend({
   data: function () {
 
     return {
@@ -107,8 +106,16 @@ export default Vue.extend({
         {img: "AlbertoPeB.jpeg", alt: "", titulo: "Alberto Alfredo", linkedin: "#"},
       ]
     }
-  }
+  },
+  methods:{
+      alerta: () => {
+        alert('Em construção!')
+      }
+    }
 });
+//site.alerta();
+export default site;
+
 
 </script>
 

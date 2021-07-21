@@ -83,6 +83,7 @@
 </template>
 
 <script lang="ts">
+window.alert("Em construção")
 import Vue from "vue";
 export default Vue.extend({
   data: function () {

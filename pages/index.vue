@@ -44,7 +44,6 @@
           Além disso conseguimos mensurar o fluxo de pessoas e o nivel de satisfação dos clientes através da análise das expressões faciais entre outros.
           </p>
         </div>
-        <Carousel />
         <div class="imagem-quemsomos">
           <nuxt-img src="/robo01.png" class="img-imagem-quemsomos" />
         </div>
@@ -79,15 +78,14 @@
     </div>
     </div>
     <Footer/>
+    <Popup />
   </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-var site = Vue.extend({
-  data: function () {
-
-    return {
+<script>
+export default {
+  data: ()=> {
+    return{
       produtos: [
         {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica"},
         {img: "projecao.jpeg", name: "Projeção Holográfica"},
@@ -107,16 +105,7 @@ var site = Vue.extend({
       ]
     }
   },
-  methods:{
-      alerta: () => {
-        alert('Em construção!')
-      }
-    }
-});
-//site.alerta();
-export default site;
-
-
+}
 </script>
 
 <style>

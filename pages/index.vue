@@ -52,7 +52,7 @@
 
       <div class="container-quemsomos-equipe">
         <div v-for="(indv, index) in equipe" :key="index" class="avatar-quemsomos-container">
-        <a :href="indv.linkedin">
+        <a :href="indv.linkedin" target="_blank">
           <div class="avatar-quemsomos">
             <div class="img-avatar">
             <nuxt-img class="avatar-img" :src="indv.img" :alt="indv.alt" />
@@ -96,12 +96,12 @@ export default {
         {img: "", alt: "", titulo: "", text: ""},
       ],
       equipe: [
-        {img: "fernando.png", alt: "", titulo: "FERNANDO EDUARDO DA SILVA", linkedin: "#"},
-        {img: "flavio.png", alt: "", titulo: "FLAVIO HENRIQUE DA SILVA", linkedin: "#"},
-        {img: "giovani.png", alt: "", titulo: "GIOVANI BERTOLLA SAMPAIO", linkedin: "#"},
-        {img: "michel.png", alt: "", titulo: "MICHEL SEHN", linkedin: "#"},
-        {img: "junior.png", alt: "", titulo: "JUNIOR ODPPIS", linkedin: "#"},
-        {img: "AlbertoPeB.jpeg", alt: "", titulo: "Alberto Alfredo", linkedin: "#"},
+        {img: "Fernando.png", alt: "", titulo: "FERNANDO, CEO E FOUNDER", linkedin: "https://www.linkedin.com/in/fernando-eduardo-da-silva-183678a1/"},
+        {img: "Flavio.png", alt: "", titulo: "FLAVIO, CTO E CO-FOUNDER", linkedin: "https://www.linkedin.com/in/flávio-henrique-da-silva-807841ba/"},
+        {img: "Giovani.png", alt: "", titulo: "GIOVANI, CO-FOUNDER", linkedin: "https://www.linkedin.com/in/giovani-bertolla-sampaio-28151131/"},
+        {img: "Michel.png", alt: "", titulo: "MICHEL, CFO", linkedin: "https://www.linkedin.com/in/michelsehn/"},
+        {img: "junior.png", alt: "", titulo: "JUNIOR, MARKETING", linkedin: "https://www.linkedin.com/in/junior-odppis-a3561235/"},
+        {img: "AlbertoPeB.jpeg", alt: "", titulo: "ALBERTO, DESENVOLVEDOR", linkedin: "https://www.linkedin.com/in/alberto-alfredo-774a5397/"},
       ]
     }
   },
@@ -139,8 +139,8 @@ export default {
     transition: all 0.3s ease-out;
   }
   .imagem-produtos:hover {
-    transform: scale(1.2, 1.2);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    box-shadow: inset 0 0 0 100px var(--main-color);
+    transform: scale(1.1);
   }
   #case {
     background-image: url("~assets/images/fundoMeio.png");
@@ -169,8 +169,7 @@ export default {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .imagem-cases:hover {
-    transform: scale(1.2, 1.2);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: scale(1.1);
   }
   .texto-cases{
     padding: 0 0.8vw;
@@ -245,6 +244,7 @@ export default {
     height: auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    background-color:rgba(63, 63, 63, 0.808);
   }
   .img-avatar{
     width: 11vw;
@@ -254,7 +254,7 @@ export default {
   }
 
   .img-avatar:hover{
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1);
   }
   .texto-avatar{
     display: flex;

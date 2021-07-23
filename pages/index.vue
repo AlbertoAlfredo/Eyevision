@@ -79,7 +79,9 @@
         <div class="texto-quemsomos" style="text-align: left;">
           <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
           <div class="contato">
+          <hr />
             <p><a href="https://api.whatsapp.com/send?phone=5541992814373">whatsapp: +55(41)99281-4373</a></p>
+            <hr />
             <p><a href="mailto:eyevision@eyevision.ai">eyevision@eyevision.ai</a></p>
           </div>
         </div>
@@ -99,7 +101,6 @@ export default {
     return{
       produtos: [
         {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica"},
-        {img: "projecao.jpeg", name: "Projeção Holográfica"},
         {img: "promotor.jpeg", name: "Promotor Hologrgáfico"},
         {img: "analitics.jpeg", name: "Analitics"},
         ],

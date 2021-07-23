@@ -7,7 +7,8 @@
       </div>
       <hr />
       <div class="midias">
-      <img src="~/assets/images/logo_face.png" alt=""><img src="~/assets/images/logo_intsa.png" alt=""><img src="~/assets/images/logo_link.png" alt="">
+      <hr />
+      <a target="_blank" href="https://business.facebook.com/eyevision.midias/"><img src="~/assets/images/logo_face.png" alt=""></a><a href="https://www.instagram.com/eyevision.ai/" target="_blank"><img src="~/assets/images/logo_intsa.png" alt=""></a><a target="_blank" href="https://www.linkedin.com/company/eyevision-m%C3%ADdias-interativas/"><img src="~/assets/images/logo_link.png" alt=""></a>
       </div>
     </div>
     <div class="texto">
@@ -36,6 +37,9 @@ export default Vue.extend({
   .imagens {
     display: flex;
     flex-direction: row;
+}
+.midias {
+  margin-right: 10vw;
 }
 .midias img{
   margin-left:1vw;

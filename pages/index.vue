@@ -149,13 +149,13 @@ a, a:hover, a:visited {
     margin: 0 1vw 0 1vw;
     width: 17vw;
     height: 19.7vw;
-    border-radius: 20px;
+    border-radius: 10%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
   .imagem-produtos {
     width: 87%;
     padding: 1vw;
-    border-radius: 20px;
+    border-radius: 10%;
     transition: all 0.3s ease-out;
   }
   .imagem-produtos:hover {
@@ -177,12 +177,12 @@ a, a:hover, a:visited {
     align-items: center;
     width: 18vw;
     height: 25vw;
-    border-radius: 10px;
+    border-radius: 10%;
     padding: 0.8vh 1.5vw;
 
   }
   .imagem-cases{
-    border-radius: 10px;
+    border-radius: 10%;
     width: 17vw;
     height: auto;
     transition: all 0.3s ease-out;
@@ -206,7 +206,7 @@ a, a:hover, a:visited {
     width: 17vw;
     height: 18vw;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 10%;
   }
   .paragrafo-case{
     padding: 0px;
@@ -271,7 +271,7 @@ a, a:hover, a:visited {
   .avatar-img{
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     background-color:rgba(63, 63, 63, 0.808);
   }

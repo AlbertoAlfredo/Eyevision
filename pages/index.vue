@@ -31,7 +31,7 @@
         </div>
 
         <div class="fundo-imagem-cases">
-         <iframe class="iframe-video" src="https://www.youtube.com/embed/1QgE7-pUZaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="iframe-video" src="https://www.youtube.com/embed/1QgE7-pUZaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <hr/>
           <div class="texto-cases">
             <h2 class="titulo-case">Dia da Tecnologia Vaticano - Curitiba/PR</h2>
@@ -94,6 +94,8 @@
         <div class="texto-quemsomos" style="text-align: left;">
           <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
           <div class="contato">
+          <hr />
+          <p class="link-contato"><img src="~assets/images/map-solid.svg" class="icon-contato" alt=""> <a href="https://goo.gl/maps/Y1c781b4EfAWRWsQ8" target="_blank">AV. VISC DE GUARAPUAVA, 3263 - CENTRO, CURITUBA-PR</a></p>
           <hr />
             <p class="link-contato"><img src="~/assets/images/whatsapp.png" class="icon-contato" alt=""><a href="https://api.whatsapp.com/send?phone=554195183964">whatsapp: +55 (41)9518-3964</a></p>
             <hr />

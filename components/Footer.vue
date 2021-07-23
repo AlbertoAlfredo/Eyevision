@@ -52,8 +52,8 @@ export default Vue.extend({
 .texto{
   padding-top:5vh;
   width: 100%;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   color: #fff;
 }
 .texto p{

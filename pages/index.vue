@@ -80,9 +80,9 @@
           <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
           <div class="contato">
           <hr />
-            <p><a href="https://api.whatsapp.com/send?phone=5541992814373">whatsapp: +55(41)99281-4373</a></p>
+            <p class="link-contato"><img src="~/assets/images/whatsapp.png" class="icon-contato" alt=""><a href="https://api.whatsapp.com/send?phone=5541992814373">whatsapp: +55(41)99281-4373</a></p>
             <hr />
-            <p><a href="mailto:eyevision@eyevision.ai">eyevision@eyevision.ai</a></p>
+            <p class="link-contato"><img src="~/assets/images/envelope.png" class="icon-contato" alt=""><a href="mailto:eyevision@eyevision.ai">eyevision@eyevision.ai</a></p>
           </div>
         </div>
         <div class="imagem-quemsomos">
@@ -251,6 +251,11 @@ a, a:hover, a:visited {
     width: 100%;
     height: auto;
   }
+  .link-contato{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
   .video-iframe{
     width: 60vw;
     height: 30vw;
@@ -262,6 +267,10 @@ a, a:hover, a:visited {
   }
   .avatar-quemsomos-container{
     margin: 10px;
+  }
+  .icon-contato{
+    width: 3vw;
+    height: auto;
   }
   .titulo-avatar{
     font-size: 1.5vw;

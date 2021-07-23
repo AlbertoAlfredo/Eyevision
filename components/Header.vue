@@ -21,14 +21,12 @@
 <script>
 export default {
 
-  created(){
-  }
 }
 </script>
 <style scoped>
-
   .banner {
-    width: 100vw;
+    width: 98vw;
+    height: 200vh;
     }
   .banner-img{
     width: 100%;
@@ -37,10 +35,11 @@ export default {
     top: 0;
   }
   .navbar{
-    margin: 4vw 4vw;
+    padding: 3.5vw 3.5vw;
     height: 45vw;
     display: flex;
     flex-direction: row;
+    max-width: 90%;
   }
   .navbar-list{
     margin-left: 27vw;

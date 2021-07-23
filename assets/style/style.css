@@ -96,3 +96,13 @@ p{
   padding: 0px;
   margin: 0px;
 }
+body{
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+}

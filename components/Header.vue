@@ -26,7 +26,7 @@ export default {
 <style scoped>
   .banner {
     width: 98vw;
-    height: 200vh;
+    height: 60vw;
     }
   .banner-img{
     width: 100%;

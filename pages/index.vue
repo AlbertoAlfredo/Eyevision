@@ -298,4 +298,11 @@ a, a:hover, a:visited {
   hr{
     height: 4vh;
   }
+
+  @media (max-width: 840px) {
+  #case{
+    background-image: none;
+    background-color: rgb(131, 131, 131);
+  }
+  }
 </style>

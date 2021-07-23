@@ -61,4 +61,19 @@ export default Vue.extend({
   font-family: var(--secondary-font);
   font-weight: 550;
   }
+  @media (max-width: 840px) {
+  footer{
+    background-image: none;
+    background-color: var(--main-color);
+    max-height: 10vh;
+    min-height: 10vh;
+    padding-bottom: 30vh;
+    margin-bottom: 0px;
+    background-size: auto;
+  }
+  .container{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    }
+  }
 </style>

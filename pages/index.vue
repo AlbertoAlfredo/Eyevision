@@ -49,6 +49,10 @@
         </div>
       </div>
       <hr />
+      <div class="center">
+        <iframe class="video-iframe" src="https://www.youtube.com/embed/voN9es0TfY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <hr />
 
       <div class="container-quemsomos-equipe">
         <div v-for="(indv, index) in equipe" :key="index" class="avatar-quemsomos-container">
@@ -58,7 +62,7 @@
             <nuxt-img class="avatar-img" :src="indv.img" :alt="indv.alt" />
             </div>
             <div class="texto-avatar">
-            <h3 class="titulo-avatar">{{indv.titulo}}</h3>
+            <h3 class="titulo-avatar" v-html="indv.titulo"></h3>
             <img class="icone-quemsomos" src="~assets/images/logo_in.png" alt="" />
             </div>
           </div>
@@ -67,10 +71,17 @@
       </div>
     </div>
     <div id="contato" class="container">
+    <div class="texto-quemsomos">
+    <h2 class="">Contato</h2>
+    </div>
       <div class="container-quemsomos" style="flex-direction:row-reverse;">
+
         <div class="texto-quemsomos" style="text-align: left;">
           <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
-          <iframe style="width: 40vw; height: 60vw;" src="https://docs.google.com/forms/d/e/1FAIpQLSf76vHwaygqk-fbpnyQVlSHdAegrj_3ATpd6QoWBOxTAtuNjQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+          <div class="contato">
+            <p><a href="https://api.whatsapp.com/send?phone=5541992814373">whatsapp: +55(41)99281-4373</a></p>
+            <p><a href="mailto:eyevision@eyevision.ai">eyevision@eyevision.ai</a></p>
+          </div>
         </div>
         <div class="imagem-quemsomos">
           <nuxt-img src="/robo02.png" class="img-imagem-quemsomos" />
@@ -96,12 +107,12 @@ export default {
         {img: "", alt: "", titulo: "", text: ""},
       ],
       equipe: [
-        {img: "Fernando.png", alt: "", titulo: "FERNANDO, CEO E FOUNDER", linkedin: "https://www.linkedin.com/in/fernando-eduardo-da-silva-183678a1/"},
-        {img: "Flavio.png", alt: "", titulo: "FLAVIO, CTO E CO-FOUNDER", linkedin: "https://www.linkedin.com/in/flávio-henrique-da-silva-807841ba/"},
-        {img: "Giovani.png", alt: "", titulo: "GIOVANI, CO-FOUNDER", linkedin: "https://www.linkedin.com/in/giovani-bertolla-sampaio-28151131/"},
-        {img: "Michel.png", alt: "", titulo: "MICHEL, CFO", linkedin: "https://www.linkedin.com/in/michelsehn/"},
-        {img: "junior.png", alt: "", titulo: "JUNIOR, MARKETING", linkedin: "https://www.linkedin.com/in/junior-odppis-a3561235/"},
-        {img: "AlbertoPeB.jpeg", alt: "", titulo: "ALBERTO, DESENVOLVEDOR", linkedin: "https://www.linkedin.com/in/alberto-alfredo-774a5397/"},
+        {img: "Fernando.jpg", alt: "", titulo: "FERNANDO,<br/> CEO E FOUNDER", linkedin: "https://www.linkedin.com/in/fernando-eduardo-da-silva-183678a1/"},
+        {img: "Flavio.jpg", alt: "", titulo: "FLAVIO,<br/> CTO E <br/>CO-FOUNDER", linkedin: "https://www.linkedin.com/in/flávio-henrique-da-silva-807841ba/"},
+        {img: "Giovani.jpeg", alt: "", titulo: "GIOVANI,<br/> CO-FOUNDER", linkedin: "https://www.linkedin.com/in/giovani-bertolla-sampaio-28151131/"},
+        {img: "Michel.jpg", alt: "", titulo: "MICHEL,<br/> CFO", linkedin: "https://www.linkedin.com/in/michelsehn/"},
+        {img: "Junior.jpg", alt: "", titulo: "JUNIOR,<br/> MARKETING", linkedin: "https://www.linkedin.com/in/junior-odppis-a3561235/"},
+        {img: "Alberto.jpg", alt: "", titulo: "ALBERTO,<br/> DESENVOLVEDOR", linkedin: "https://www.linkedin.com/in/alberto-alfredo-774a5397/"},
       ]
     }
   },
@@ -109,9 +120,17 @@ export default {
 </script>
 
 <style>
+a, a:hover, a:visited {
+  color: black;
+}
 </style>
 
 <style scoped>
+.center {
+    align-items: center;
+    text-align: center;
+
+  }
   .container-flex-inline {
     display: flex;
     flex-direction: row;
@@ -199,6 +218,10 @@ export default {
   .container-pt0 {
     padding-top: 0;
   }
+  .contato{
+    display: flex;
+    flex-direction: column;
+  }
   .texto-quemsomos{
     display: flex;
     flex-direction:column;
@@ -208,7 +231,7 @@ export default {
     text-align: right;
   }
   .texto-quemsomos h1 {
-    font-size:2vw;
+    font-size:vw;
     color: var(--main-color);
   }
   .texto-quemsomos h2 {
@@ -227,6 +250,10 @@ export default {
     width: 100%;
     height: auto;
   }
+  .video-iframe{
+    width: 60vw;
+    height: 30vw;
+  }
   .container-quemsomos-equipe{
     display: flex;
     flex-direction: row;
@@ -236,8 +263,9 @@ export default {
     margin: 10px;
   }
   .titulo-avatar{
-    font-size: 2.1vw;
+    font-size: 1.5vw;
     color: var(--main-color);
+    word-break: keep-all;
   }
   .avatar-img{
     width: 100%;
@@ -251,9 +279,11 @@ export default {
     height: auto;
     transition: all 0.3s ease-out;
     margin-bottom: 1vh;
+    filter: grayscale(100%);
   }
 
   .img-avatar:hover{
+  filter: grayscale(0%);
     transform: scale(1.1);
   }
   .texto-avatar{

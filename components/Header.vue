@@ -9,13 +9,9 @@
 
         <ul class="navbar-list">
           <li class="navbar-link"><a href="#home">HOME</a></li>
-          <li class="navbar-link">::</li>
           <li class="navbar-link"><a href="#produtos">PRODUTOS</a></li>
-          <li class="navbar-link">::</li>
           <li class="navbar-link"><a href="#case">CASE</a></li>
-          <li class="navbar-link">::</li>
           <li class="navbar-link"><a href="#quemsomos">QUEM SOMOS</a></li>
-          <li class="navbar-link">::</li>
           <li class="navbar-link"><a href="#news">NEWS</a></li>
         </ul>
       </nav>
@@ -41,15 +37,18 @@ export default {
     top: 0;
   }
   .navbar{
-    margin: 7vw 7vw;
+    margin: 4vw 4vw;
     height: 45vw;
     display: flex;
     flex-direction: row;
   }
   .navbar-list{
-    margin-left: 15vw;
+    margin-left: 27vw;
     display: inline-flex;
 
+  }
+  .navbar-link{
+    padding: 0 1vw 0 1vw;
   }
   .navbar-link, .navbar-link > a{
     color: #fff;

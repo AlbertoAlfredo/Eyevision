@@ -13,26 +13,41 @@
     <section id="case" class="container container-pf0">
       <h1 class="titulo-produtos">CASE</h1>
       <hr/>
-      <div v-if="cases[0].img !== ''" class="container-flex-inline">
-        <div v-for="(caso, index) in cases" :key="index" class="fundo-imagem-cases">
-          <nuxt-img :src="caso.img" class="imagem-cases" alt="" />
+      <div class="container-flex-inline">
+        <div class="fundo-imagem-cases">
+          <iframe class="iframe-video" src="https://www.youtube.com/embed/8mBdrwqFIi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <hr/>
           <div class="texto-cases">
-            <h2 class="titulo-case">{{caso.titulo}}</h2>
-            <p class="paragrafo-case">{{caso.text}}</p>
+            <h2 class="titulo-case">Oeste Plaza Shopping - Andradina/SP</h2>
+          </div>
+        </div>
+
+        <div class="fundo-imagem-cases">
+          <iframe src="https://www.youtube.com/embed/6AZqu5n5S7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <hr/>
+          <div class="texto-cases">
+            <h2 class="titulo-case">TremBão de Minas - Curitiba/PR</h2>
+          </div>
+        </div>
+
+        <div class="fundo-imagem-cases">
+         <iframe class="iframe-video" src="https://www.youtube.com/embed/1QgE7-pUZaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <hr/>
+          <div class="texto-cases">
+            <h2 class="titulo-case">Dia da Tecnologia Vaticano - Curitiba/PR</h2>
+          </div>
+        </div>
+
+        <div class="fundo-imagem-cases">
+          <iframe class="iframe-video" src="https://www.youtube.com/embed/WRvTNfhSFdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <hr/>
+          <div class="texto-cases">
+            <h2 class="titulo-case">POC  Largo da Ordem  - Curitiba/PR</h2>
           </div>
         </div>
       </div>
-      <div v-if="cases[0].img == ''" class="container-flex-inline">
-        <div v-for="n in 4" :key="n" class="fundo-imagem-cases">
-          <div class="quadrado-branco"></div>
-          <hr/>
-          <div class="texto-cases">
-            <h2 class="titulo-case">Lorem ipsum dolor sit amet</h2>
-            <p class="paragrafo-case">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
+
+
     </section>
     <div id="quemsomos" class="container container-pt0">
       <div class="container-quemsomos">
@@ -80,7 +95,7 @@
           <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
           <div class="contato">
           <hr />
-            <p class="link-contato"><img src="~/assets/images/whatsapp.png" class="icon-contato" alt=""><a href="https://api.whatsapp.com/send?phone=5541992814373">whatsapp: +55(41)99281-4373</a></p>
+            <p class="link-contato"><img src="~/assets/images/whatsapp.png" class="icon-contato" alt=""><a href="https://api.whatsapp.com/send?phone=554195183964">whatsapp: +55 (41)9518-3964</a></p>
             <hr />
             <p class="link-contato"><img src="~/assets/images/envelope.png" class="icon-contato" alt=""><a href="mailto:eyevision@eyevision.ai">eyevision@eyevision.ai</a></p>
           </div>
@@ -105,7 +120,10 @@ export default {
         {img: "analitics.jpeg", name: "Analitics"},
         ],
       cases: [
-        {img: "", alt: "", titulo: "", text: ""},
+        {video: '<iframe class="iframe-video" src="https://www.youtube.com/embed/8mBdrwqFIi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', alt: "", titulo: "Oeste Plaza Shopping - Andradina/SP"},
+        {video: '<iframe class="iframe-video" src="https://www.youtube.com/embed/1QgE7-pUZaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', alt: "", titulo: "Dia da Tecnologia Vaticano - Curitiba/PR", text: ""},
+        {video: '<iframe class="iframe-video" src="https://www.youtube.com/embed/8mBdrwqFIi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', alt: "", titulo: "TremBão de Minas - Curitiba/PR", text: ""},
+        {video: '<iframe class="iframe-video" src="https://www.youtube.com/embed/WRvTNfhSFdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', alt: "", titulo: "POC  Largo da Ordem  - Curitiba/PR", text: ""},
       ],
       equipe: [
         {img: "Fernando.jpg", alt: "", titulo: "FERNANDO,<br/> CEO E FOUNDER", linkedin: "https://www.linkedin.com/in/fernando-eduardo-da-silva-183678a1/"},
@@ -171,6 +189,7 @@ a, a:hover, a:visited {
   .container-pf0{
     padding-bottom: 0px;
   }
+
   .fundo-imagem-cases{
     display: flex;
     flex-direction: column;
@@ -303,6 +322,13 @@ a, a:hover, a:visited {
   .icone-quemsomos{
     width: 2.3vw;
     height: 2.3vw;
+  }
+  .case-video > iframe{
+    width: 17vw;
+  }
+  .iframe-video{
+    width: 20vw !important;
+    height: auto;
   }
   hr{
     height: 4vh;

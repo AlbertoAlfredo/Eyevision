@@ -4,7 +4,7 @@
         <img class="banner-img" src="~/assets/images/BannerCortado.png" />
       <nav class="navbar">
         <div class="banner-logo">
-          <img class="banner-logo-img" src="~/assets/images/logoEyevison.png" alt=""/>
+          <img class="banner-logo-img" src="~/assets/images/logo_h.png" alt=""/>
         </div>
 
         <ul class="navbar-list">

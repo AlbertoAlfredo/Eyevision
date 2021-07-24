@@ -95,7 +95,7 @@
           <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
           <div class="contato">
           <hr />
-          <p class="link-contato"><img src="~assets/images/map-solid.svg" class="icon-contato" alt=""> <a href="https://goo.gl/maps/Y1c781b4EfAWRWsQ8" target="_blank">AV. VISC DE GUARAPUAVA, 3263 - CENTRO, CURITUBA-PR</a></p>
+          <p class="link-contato"><img src="~assets/images/map-solid.svg" class="icon-contato" alt=""> <a href="https://goo.gl/maps/Y1c781b4EfAWRWsQ8" target="_blank">AV. VISC DE GUARAPUAVA, 3263 <br /> - CENTRO, CURITUBA-PR</a></p>
           <hr />
             <p class="link-contato"><img src="~/assets/images/whatsapp.png" class="icon-contato" alt=""><a href="https://api.whatsapp.com/send?phone=554195183964">whatsapp: +55 (41)9518-3964</a></p>
             <hr />
@@ -107,7 +107,6 @@
         </div>
     </div>
     </div>
-    <Footer/>
     <Popup />
   </div>
 </template>
@@ -118,7 +117,7 @@ export default {
     return{
       produtos: [
         {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica"},
-        {img: "promotor.jpeg", name: "Promotor Hologrgáfico"},
+        {img: "promotor.jpeg", name: "Promotor Holográfico"},
         {img: "analitics.jpeg", name: "Analitics"},
         ],
       cases: [
@@ -292,6 +291,7 @@ a, a:hover, a:visited {
   .icon-contato{
     width: 3vw;
     height: auto;
+    margin-right: 1vw;
   }
   .titulo-avatar{
     font-size: 1.5vw;

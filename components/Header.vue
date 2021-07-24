@@ -38,9 +38,9 @@
 export default {
   data: () => ({
     items: [
-      { title: "Caixa<br/> Holográfica", href: "/produtos/caixaholografica/" },
-      { title: "Promotor<br/> Holográfico", href: "/produtos/promotorholografico/"  },
-      { title: "Analitics", href: "/produtos/analitics/"  },
+      { title: "Caixa Holográfica", href: "/Eyevision/produtos/caixaholografica/" },
+      { title: "Promotor Holográfico", href: "/Eyevision/produtos/promotorholografico/"  },
+      { title: "Analitics", href: "/Eyevision/produtos/analitics/"  },
     ],
     mostrar: false,
   }),
@@ -110,9 +110,8 @@ export default {
   position: relative;
 }
 .dropdown-list-text{
-  font-size: 1.5vw;
+  font-size: 1vw;
   text-align: left;
-  border: 1px solid #fff;
   color: #fff;
 
 }

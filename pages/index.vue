@@ -53,10 +53,9 @@
       <div class="container-quemsomos">
         <div class="texto-quemsomos">
           <h1>QUEM SOMOS</h1>
-          <h2>A INOVAÇÃO EM<br/>UM SIMPLES<br/>PISCAR DE OLHOS</h2>
+          <h2>CONSTRUINDO UM RELACIONAMENTO VIRTUAL COM O SEU CLIENTE REAL</h2>
           <p>
-          A EYEVISION Midias interativas é uma empresa que desenvolve soluções interativas e inovadoras que utilizam Inteligência Artificial e Visão Computacional para inovar a experiência de compra do consumidor. Nossas soluções ajudam empresas a divulgar produtos, marcas e serviços de forma inovadora, criativa imteligente e impactante.<br/>
-          Além disso conseguimos mensurar o fluxo de pessoas e o nivel de satisfação dos clientes através da análise das expressões faciais entre outros.
+          A EYEVISION Mídias Interativas nasce no mercado de marketing para desenvolver soluções interativas e inovadoras, utilizando Inteligência Artificial e Visão Computacional para explorar a experiência de compra do consumidor, criando e mantendo um vínculo entre as partes. São diversas soluções com o que existe de mais avançado no levantamento e manutenção de dados. A empresa é fruto do trabalho de dois irmãos, Fernando e Flávio, obstinados por detalhes, que, acompanhados por dois sócios, Giovani e Michel, que embarcaram na viagem de trazer a solução ideal, entre captação e administração de dados para as empresas de um modo geral, focando no aumento da produtividade e gerando mais negócios
           </p>
         </div>
         <div class="imagem-quemsomos">
@@ -95,7 +94,7 @@
           <!-- <h1 style="font-size: 4vw;">Contato</h1> -->
           <div class="contato">
           <hr />
-          <p class="link-contato"><img src="~assets/images/map-solid.svg" class="icon-contato" alt=""> <a href="https://goo.gl/maps/Y1c781b4EfAWRWsQ8" target="_blank">AV. VISC DE GUARAPUAVA, 3263 <br /> - CENTRO, CURITUBA-PR</a></p>
+          <p class="link-contato"><img src="~assets/images/map-solid.svg" class="icon-contato" alt=""> <a href="https://goo.gl/maps/Y1c781b4EfAWRWsQ8" target="_blank">AV. VISC DE GUARAPUAVA, 3263 <br /> - 8 andar - CENTRO, CURITUBA-PR</a></p>
           <hr />
             <p class="link-contato"><img src="~/assets/images/whatsapp.png" class="icon-contato" alt=""><a href="https://api.whatsapp.com/send?phone=554195183964">whatsapp: +55 (41)9518-3964</a></p>
             <hr />
@@ -116,9 +115,9 @@ export default {
   data: ()=> {
     return{
       produtos: [
-        {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica", url:"/#/produtos/caixaholografica/"},
-        {img: "promotor.jpeg", name: "Promotor Holográfico", url:"/#/produtos/promotorholografico/"},
-        {img: "analitics.jpeg", name: "Analitics", url:"/#/produtos/analitics/"},
+        {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica", url:"/Eyevision/produtos/caixaholografica/"},
+        {img: "promotor.jpeg", name: "Promotor Holográfico", url:"/Eyevision/produtos/promotorholografico/"},
+        {img: "analitics.jpeg", name: "Analitics", url:"/Eyevision/produtos/analitics/"},
         ],
       cases: [
         {video: '<iframe class="iframe-video" src="https://www.youtube.com/embed/8mBdrwqFIi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', alt: "", titulo: "Oeste Plaza Shopping - Andradina/SP"},

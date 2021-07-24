@@ -5,7 +5,7 @@
       <hr />
       <div class="container-flex-inline">
         <div v-for="(produto, index) in produtos" :key="index" class="fundo-imagem-produtos">
-          <nuxt-img :src="produto.img" class="imagem-produtos" :alt="produto.nome" />
+          <a :href="produto.url" alt=""><nuxt-img :src="produto.img" class="imagem-produtos" :alt="produto.nome" /></a>
         </div>
 
       </div>
@@ -116,9 +116,9 @@ export default {
   data: ()=> {
     return{
       produtos: [
-        {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica"},
-        {img: "promotor.jpeg", name: "Promotor Holográfico"},
-        {img: "analitics.jpeg", name: "Analitics"},
+        {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica", url:"/#/produtos/caixaholografica/"},
+        {img: "promotor.jpeg", name: "Promotor Holográfico", url:"/#/produtos/promotorholografico/"},
+        {img: "analitics.jpeg", name: "Analitics", url:"/#/produtos/analitics/"},
         ],
       cases: [
         {video: '<iframe class="iframe-video" src="https://www.youtube.com/embed/8mBdrwqFIi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', alt: "", titulo: "Oeste Plaza Shopping - Andradina/SP"},

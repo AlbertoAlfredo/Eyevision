@@ -1,5 +1,6 @@
 <template>
   <footer class="container-fluid">
+  <img src="~assets/images/baixofundo.png" style="transform: rotate(180deg); " alt="">
   <div class="container">
     <div class="imagens">
       <div class="logo">
@@ -10,9 +11,6 @@
       <hr />
       <a target="_blank" href="https://business.facebook.com/eyevision.midias/"><img class="socialmidia" src="~/assets/images/facebook_white.png" alt=""></a><a href="https://www.instagram.com/eyevision.ai/" target="_blank"><img class="socialmidia" src="~/assets/images/instagram_white.png" alt=""></a><a target="_blank" href="https://www.linkedin.com/company/eyevision-m%C3%ADdias-interativas/"><img class="socialmidia" src="~/assets/images/linkedin_white.png" alt=""></a>
       </div>
-    </div>
-    <div class="texto">
-      <p>AV. VISC DE GUARAPUAVA, 3263 - CENTRO, CURITUBA-PR</p>
     </div>
     </div>
   </footer>
@@ -25,12 +23,9 @@ export default Vue.extend({
 </script>
 <style scoped>
   footer {
-    padding-top:40vh;
-    background-image: url("~assets/images/fundo_rodape.png");
+    background-color: var(--main-color);
     width: 100%;
     min-height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     flex-direction: column;
   }

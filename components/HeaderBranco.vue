@@ -101,12 +101,7 @@ export default {
 
 }
 .dropdown-list {
-  font-size: 1vw;
-  margin-left: 1vw;
-  top: 0px;
   background-color: #fff;
-  display:block;
-  position: relative;
 }
 .dropdown-list-text{
   font-size: 1.5vw;
@@ -114,13 +109,6 @@ export default {
   border: 1px solid rgba(0, 0, 0, 0.158);
   color: var(--main-color);
 
-}
-.banner-logo {
-  width: 30vw;
-  height: auto;
-  position: absolute;
-  left: 1vw;
-  top: 1vw;
 }
 .banner-logo-img {
   width: 100%;

@@ -16,7 +16,7 @@
         <ul class="navbar-list">
           <li class="navbar-link"><a @click="mostrar = false" href="/Eyevision/">HOME</a></li>
           <div class="dropdown-menu">
-          <li class="navbar-link dropdown-menu"><a style="cursor: pointer;" @click="fechar()">PRODUTOS</a></li>
+          <li class="navbar-link"><a style="cursor: pointer;" @click="fechar()">PRODUTOS</a></li>
           <transition name="fade">
           <div v-if="mostrar" class="dropdown-list">
             <div v-for="(item, index) in items" :key="index">
@@ -51,6 +51,30 @@ export default {
   }
 };
 </script>
+<style>
+.banner-logo {
+  width: 20vw;
+  height: auto;
+  position: absolute;
+  left: 1vw;
+  top: 1.6vw;
+}
+.dropdown-list {
+  font-size: 1vw;
+  margin-left: 1vw;
+  top: 0px;
+  display:block;
+  position: absolute;
+  top: 2vw;
+}
+.dropdown-list-text{
+  font-size: 1.5vw;
+  padding: 0.2vw 0;
+  font-weight: 300;
+  text-align: left;
+
+}
+</style>
 <style scoped>
 .fade-enter-active, .fade-leave-active {
   transition: all .5s;
@@ -102,28 +126,27 @@ export default {
 
 }
 .dropdown-list {
-  font-size: 1vw;
-  margin-left: 1vw;
-  top: 0px;
   background-color: #000;
-  display:block;
-  position: relative;
 }
 .dropdown-list-text{
-  font-size: 1vw;
-  text-align: left;
+
   color: #fff;
 
 }
-.banner-logo {
-  width: 30vw;
-  height: auto;
-  position: absolute;
-  left: 1vw;
-  top: 1vw;
-}
+
 .banner-logo-img {
   width: 100%;
   height: auto;
 }
+@media (max-width: 800px) {
+  .dropdown-list {
+  top: 3vw;
+}
+@media (max-width: 550px) {
+  .dropdown-list {
+  top: 4vw;
+}
+}
+
+  }
 </style>

@@ -147,7 +147,7 @@
               alt=""
             />
           </div>
-          <div class="texto-icones"><h4></h4></div>
+          <div class="texto-icones"><h4>Extração de informações por meio de imagens</h4></div>
         </div>
 
         <div class="container-imagem">
@@ -158,7 +158,7 @@
               alt=""
             />
           </div>
-          <div class="texto-icones"><h4></h4></div>
+          <div class="texto-icones"><h4>Dashboard dinâmico</h4></div>
         </div>
 
         <div class="container-imagem">
@@ -169,18 +169,16 @@
               alt=""
             />
           </div>
-          <div class="texto-icones"><h4></h4></div>
+          <div class="texto-icones"><h4>Verificação de fluxo</h4></div>
         </div>
       </div>
       <hr />
       <h3>Aplicação</h3>
       <ul>
         <li>
-          Solução ideal para ativação de marcas, lançamento de marcas ou
-          serviços.
+          Campanhas de publicitárias divulgando produtos, serviços, promovendo as marcas das empresas de forma inovadora e inteligente.
         </li>
-        <li>Recomendado para feiras, congressos, exposições e ventos.</li>
-        <li>Construção de vitrines holográficas.</li>
+        <li>Orientando o público em Shoppings, Aeroportos, Repartições Públicas e Privadas, Zoológicos, Parques de Diversão, Aquáticos e entre outros.</li>
       </ul>
     </div>
   </div>

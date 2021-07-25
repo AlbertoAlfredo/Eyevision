@@ -13,6 +13,7 @@
     <section id="case" class="container container-pf0">
       <h1 class="titulo-produtos">CASE</h1>
       <hr/>
+      <div class="container-flex-column">
       <div class="container-flex-inline">
         <div class="fundo-imagem-cases">
           <iframe class="iframe-video" src="https://www.youtube.com/embed/8mBdrwqFIi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -23,13 +24,21 @@
         </div>
 
         <div class="fundo-imagem-cases">
-          <iframe src="https://www.youtube.com/embed/6AZqu5n5S7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="iframe-video" src="https://www.youtube.com/embed/6AZqu5n5S7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <hr/>
           <div class="texto-cases">
             <h2 class="titulo-case">TremBão de Minas - Curitiba/PR</h2>
           </div>
         </div>
-
+        </div>
+        <div class="fundo-imagem-cases">
+          <iframe class="iframe-video" src="https://www.youtube.com/embed/JQHXqHlnXso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <hr/>
+          <div class="texto-cases">
+            <h2 class="titulo-case">TPrograma NextGen - ACQUALINDA Parque Aquático & Thermas Resort</h2>
+          </div>
+        </div>
+        <div class="container-flex-inline">
         <div class="fundo-imagem-cases">
           <iframe class="iframe-video" src="https://www.youtube.com/embed/1QgE7-pUZaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <hr/>
@@ -45,10 +54,10 @@
             <h2 class="titulo-case">POC  Largo da Ordem  - Curitiba/PR</h2>
           </div>
         </div>
+        </div>
       </div>
-
-
     </section>
+    <img class="baixo-fundo" src="~assets/images/baixofundo.png" alt="">
     <div id="quemsomos" class="container container-pt0">
       <div class="container-quemsomos">
         <div class="texto-quemsomos">
@@ -145,6 +154,9 @@ a, a:hover, a:visited {
 </style>
 
 <style scoped>
+div{
+      --cor-case: rgb(117, 117, 117);
+  }
 .center {
     align-items: center;
     text-align: center;
@@ -156,35 +168,39 @@ a, a:hover, a:visited {
     justify-content: center;
     align-items:center;
   }
+  .container-flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+  }
   .titulo-produtos {
     text-align: center;
     color: var(--main-color);
   }
   .fundo-imagem-produtos {
-    background-color: var(--main-color);
     align-items: center;
     text-align: center;
     margin: 0 1vw 0 1vw;
     width: 17vw;
     height: 19.7vw;
     border-radius: 10%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
   }
   .imagem-produtos {
     width: 87%;
-    padding: 1vw;
+    margin: 1vw;
     border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transition: all 0.3s ease-out;
+
   }
   .imagem-produtos:hover {
-    box-shadow: inset 0 0 0 100px var(--main-color);
     transform: scale(1.1);
   }
   #case {
-    background-image: url("~assets/images/fundoMeio.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 58vw;
+    background-color: var(--cor-case);
+
   }
   .container-pf0{
     padding-bottom: 0px;
@@ -194,8 +210,8 @@ a, a:hover, a:visited {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 18vw;
-    height: 25vw;
+    width: 35vw;
+    height: 30vw;
     border-radius: 10%;
     padding: 0.8vh 1.5vw;
 
@@ -251,15 +267,15 @@ a, a:hover, a:visited {
     text-align: right;
   }
   .texto-quemsomos h1 {
-    font-size:vw;
+    font-size:3vw;
     color: var(--main-color);
   }
   .texto-quemsomos h2 {
-    font-size:5vw;
+    font-size:2.2vw;
     color: var(--main-color)
   }
   .texto-quemsomos p {
-    font-size:2vw;
+    font-size:1.6vw;
     font-family: var(--thirdy-font);
   }
   .imagem-quemsomos{
@@ -325,20 +341,17 @@ a, a:hover, a:visited {
     height: 2.3vw;
   }
   .case-video > iframe{
-    width: 17vw;
+    width: 40vw !important;
   }
   .iframe-video{
-    width: 20vw !important;
-    height: auto;
+    width: 36vw !important;
+    height: 20vw;
   }
   hr{
     height: 4vh;
   }
-
-  @media (max-width: 840px) {
-  #case{
-    background-image: none;
-    background-color: rgb(131, 131, 131);
-  }
+  .baixo-fundo{
+    width:100%;
+    background-color: var(--cor-case);
   }
 </style>

@@ -106,7 +106,6 @@ export default {
 .dropdown-list-text{
   font-size: 1.5vw;
   text-align: left;
-  border: 1px solid rgba(0, 0, 0, 0.158);
   color: var(--main-color);
 
 }

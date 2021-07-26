@@ -3,7 +3,37 @@
     <div>
       <img class="banner" src="~assets/images/promotorholografico.png" alt="" />
     </div>
-    <div class="container-flex-row">
+    <div class="imagens-laterais">
+    <hr style="margin-top: 14vw;" />
+        <div>
+          <div>
+            <img
+              class="imagens-produto"
+              src="~assets/images/promotorholo1.jpg"
+              alt=""
+            />
+          </div>
+          <hr />
+          <div>
+            <img
+              class="imagens-produto"
+              src="~assets/images/promotorholo2.jpg"
+              alt=""
+            />
+          </div>
+          <hr />
+          <div>
+            <img
+              class="imagens-produto"
+              src="~assets/images/promotorholo3.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    <div class="container">
+    <section style="margin-left: 3vw;">
+    <div class="container-flex-row" >
       <div class="texto-produto">
         <h1>Promotor Holográfico Virtual</h1>
 
@@ -17,83 +47,59 @@
           avançadas de Inteligência Artificial, conforme a necessidade do
           cliente.
         </p>
-        <hr />
+        <hr style="height: 10vw;" />
         <h3>Iteração Multicanal</h3>
-        <div class="container-imagens">
-          <div class="container-imagem">
-            <div>
-              <img
-                class="imagem-icones"
-                src="~assets/images/icones/6-DeteccaoodePresenca.png"
-                alt=""
-              />
-            </div>
-            <div class="texto-icones"><h4>Sensor de Presença</h4></div>
-          </div>
-
-          <div class="container-imagem">
-            <div>
-              <img
-                class="imagem-icones"
-                src="~assets/images/icones/5-DeteccaoFacial.png"
-                alt=""
-              />
-            </div>
-            <div class="texto-icones"><h4>Detecção Facial</h4></div>
-          </div>
-
-          <div class="container-imagem">
-            <div>
-              <img
-                class="imagem-icones"
-                src="~assets/images/icones/9-Chatbot.png"
-                alt=""
-              />
-            </div>
-            <div class="texto-icones"><h4>Chatbot</h4></div>
-          </div>
-
-          <div class="container-imagem">
-            <div>
-              <img
-                class="imagem-icones"
-                src="~assets/images/icones/8-Voz.png"
-                alt=""
-              />
-            </div>
-            <div class="texto-icones"><h4>Voz</h4></div>
-          </div>
-        </div>
       </div>
 
-      <div>
-        <div>
-          <img
-            class="imagens-produto"
-            src="~assets/images/promotorholo1.jpg"
-            alt=""
-          />
-        </div>
-        <hr />
-        <div>
-          <img
-            class="imagens-produto"
-            src="~assets/images/promotorholo2.jpg"
-            alt=""
-          />
-        </div>
-        <hr />
-        <div>
-          <img
-            class="imagens-produto"
-            src="~assets/images/promotorholo3.jpg"
-            alt=""
-          />
-        </div>
-      </div>
     </div>
 
-    <div class="container">
+      <div class="container-imagens">
+        <div class="container-imagem">
+          <div>
+            <img
+              class="imagem-icones"
+              src="~assets/images/icones/6-DeteccaoodePresenca.png"
+              alt=""
+            />
+          </div>
+          <div class="texto-icones"><h4>Sensor de Presença</h4></div>
+        </div>
+
+        <div class="container-imagem">
+          <div>
+            <img
+              class="imagem-icones"
+              src="~assets/images/icones/5-DeteccaoFacial.png"
+              alt=""
+            />
+          </div>
+          <div class="texto-icones"><h4>Detecção Facial</h4></div>
+        </div>
+
+        <div class="container-imagem">
+          <div>
+            <img
+              class="imagem-icones"
+              src="~assets/images/icones/9-Chatbot.png"
+              alt=""
+            />
+          </div>
+          <div class="texto-icones"><h4>Chatbot</h4></div>
+        </div>
+
+        <div class="container-imagem">
+          <div>
+            <img
+              class="imagem-icones"
+              src="~assets/images/icones/8-Voz.png"
+              alt=""
+            />
+          </div>
+          <div class="texto-icones"><h4>Voz</h4></div>
+        </div>
+      </div>
+      </section>
+      <hr style="height: 5vw;" />
       <h3>Beneficios</h3>
       <div class="container-imagens">
         <div class="container-imagem">
@@ -138,7 +144,7 @@
           </div>
         </div>
       </div>
-      <div class="container-imagens">
+      <div class="container-imagens"  style="margin-right: 2vw;">
         <div class="container-imagem">
           <div>
             <img
@@ -147,7 +153,9 @@
               alt=""
             />
           </div>
-          <div class="texto-icones"><h4>Extração de informações por meio de imagens</h4></div>
+          <div class="texto-icones">
+            <h4>Extração de informações por meio de imagens</h4>
+          </div>
         </div>
 
         <div class="container-imagem">
@@ -172,16 +180,24 @@
           <div class="texto-icones"><h4>Verificação de fluxo</h4></div>
         </div>
       </div>
-      <hr />
+      <hr style="height: 5vw;" />
+      <section class="texto-aplicacao">
       <h3>Aplicação</h3>
       <ul>
         <li>
-          Campanhas de publicitárias divulgando produtos, serviços, promovendo as marcas das empresas de forma inovadora e inteligente.
+          Campanhas de publicitárias divulgando produtos, serviços, promovendo
+          as marcas das empresas de forma inovadora e inteligente.
         </li>
-        <li>Orientando o público em Shoppings, Aeroportos, Repartições Públicas e Privadas, Zoológicos, Parques de Diversão, Aquáticos e entre outros.</li>
+        <li>
+          Orientando o público em Shoppings, Aeroportos, Repartições Públicas e
+          Privadas, Zoológicos, Parques de Diversão, Aquáticos e entre outros.
+        </li>
       </ul>
+      </section>
     </div>
+
   </div>
+
 </template>
 <script>
 export default {
@@ -191,6 +207,10 @@ export default {
 <style scoped>
 .banner {
   width: 100%;
+}
+.imagens-laterais{
+  position: absolute;
+  right: 0px;
 }
 .container-flex-row {
   width: 100%;
@@ -203,8 +223,8 @@ export default {
   width: 20vw;
 }
 .texto-produto {
-  width: 50vw;
-  padding-right: 5vw;
+
+  margin-right: 12vw;
   text-align: justify;
 }
 .texto-produto > h1 {
@@ -248,5 +268,13 @@ h3 {
 ul {
   list-style-type: circle;
   padding-left: 5vw;
+}
+.texto-aplicacao{
+  padding-right: 10vw;
+  padding-left: 3.2vw;
+}
+.texto-aplicacao > ul {
+  padding-left: 1vw;
+  text-align: justify;
 }
 </style>

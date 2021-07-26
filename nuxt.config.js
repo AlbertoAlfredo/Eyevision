@@ -4,7 +4,7 @@ export default {
   // para o deploy funcionar, caso esteja usando um repositorio diferente do root, coloque o nome correto do repositório
   router: {
   mode: 'hash',
-    base: '/Eyevision/'
+    base: '/'
   },
 
 

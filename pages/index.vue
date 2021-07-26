@@ -128,9 +128,9 @@ export default {
   data: ()=> {
     return{
       produtos: [
-        {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica", url:"/Eyevision/produtos/caixaholografica/"},
-        {img: "promotor.jpeg", name: "Promotor Holográfico", url:"/Eyevision/produtos/promotorholografico/"},
-        {img: "analitics.jpeg", name: "Analitics", url:"/Eyevision/produtos/analitics/"},
+        {img: "CaixaHolografica.jpeg", name: "Caixa Holográfica", url:"/produtos/caixaholografica/"},
+        {img: "promotor.jpeg", name: "Promotor Holográfico", url:"/produtos/promotorholografico/"},
+        {img: "analitics.jpeg", name: "Analitics", url:"/produtos/analitics/"},
         ],
       cases: [
         {video: '<iframe class="iframe-video" src="https://www.youtube.com/embed/8mBdrwqFIi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>', alt: "", titulo: "Oeste Plaza Shopping - Andradina/SP"},

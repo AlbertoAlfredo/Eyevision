@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/produtos/promotorholografico", {data:[{_img:{}}],fetch:{},mutations:void 0});

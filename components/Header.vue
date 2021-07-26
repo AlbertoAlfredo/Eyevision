@@ -4,7 +4,7 @@
       <img class="banner-img" alt="" src="~/assets/images/BannerCortado.png" />
       <nav class="navbar">
         <div class="banner-logo">
-        <a @click="mostrar = false" href="/">
+        <a @click="mostrar = false" href="/Eyevision">
           <img
             class="banner-logo-img"
             src="~/assets/images/logo_h.png"
@@ -14,7 +14,7 @@
         </div>
 
         <ul class="navbar-list">
-          <li class="navbar-link"><a @click="mostrar = false" href="/">HOME</a></li>
+          <li class="navbar-link"><a @click="mostrar = false" href="/Eyevision">HOME</a></li>
           <div class="dropdown-menu">
           <li class="navbar-link"><a style="cursor: pointer;" @click="fechar()">PRODUTOS</a></li>
           <transition name="fade">

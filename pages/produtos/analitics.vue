@@ -47,21 +47,15 @@ export default {
     text-align: justify;
   }
   .texto-produto > h1{
-    font-size: 8vw;
     color: var(--main-color);
   }
   .texto-produto > h2{
     color: var(--main-color);
   }
   .texto-produto > h3{
-    font-size: 4vw;
     color: var(--main-color);
   }
-  .texto-produto > p{
-    font-size: 2vw;
-  }
   .texto-produto > ul{
-    font-size: 2vw;
     list-style-type: circle;
   }
 </style>

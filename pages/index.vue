@@ -57,10 +57,14 @@
         </div>
       </div>
     </section>
+
     <img class="baixo-fundo" src="~assets/images/baixofundo.png" alt="">
+
+    <hr style="height: 5vw;" />
     <div id="quemsomos" class="container container-pt0">
       <div class="container-quemsomos">
         <div class="texto-quemsomos">
+        <hr style="height: 3vw;" />
           <h1>QUEM SOMOS</h1>
           <h2>CONSTRUINDO UM RELACIONAMENTO VIRTUAL COM O SEU CLIENTE REAL</h2>
           <p>
@@ -267,15 +271,12 @@ div{
     text-align: right;
   }
   .texto-quemsomos h1 {
-    font-size:3vw;
     color: var(--main-color);
   }
   .texto-quemsomos h2 {
-    font-size:2.2vw;
     color: var(--main-color)
   }
   .texto-quemsomos p {
-    font-size:1.6vw;
     font-family: var(--thirdy-font);
   }
   .imagem-quemsomos{

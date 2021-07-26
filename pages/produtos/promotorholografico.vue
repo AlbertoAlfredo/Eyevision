@@ -100,7 +100,7 @@
       </div>
       </section>
       <hr style="height: 5vw;" />
-      <h3>Beneficios</h3>
+      <h3>Benefícios</h3>
       <div class="container-imagens">
         <div class="container-imagem">
           <div>

@@ -91,7 +91,7 @@ h5{
   padding: 0px;
   margin: 0px;
 }
-p{
+p, ul, li, ol{
   font-size: 1.3vw;
   padding: 0px;
   margin: 0px;

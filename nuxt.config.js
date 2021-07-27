@@ -2,10 +2,6 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   // para o deploy funcionar, caso esteja usando um repositorio diferente do root, coloque o nome correto do repositório
-  router: {
-  mode: 'hash',
-    base: '/'
-  },
 
 
 //Lembrar de fazer o predeploy (nuxt build, nuxt generate), antes de mudar as configurações para subir para o github

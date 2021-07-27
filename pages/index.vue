@@ -5,7 +5,7 @@
       <hr />
       <div class="container-flex-inline">
         <div v-for="(produto, index) in produtos" :key="index" class="fundo-imagem-produtos">
-          <a :href="produto.url" alt=""><nuxt-img :src="produto.img" class="imagem-produtos" :alt="produto.nome" /></a>
+          <nuxt-link :to="produto.url" alt=""><nuxt-img :src="produto.img" class="imagem-produtos" :alt="produto.nome" /></nuxt-link>
         </div>
 
       </div>
@@ -119,7 +119,6 @@
         </div>
     </div>
     </div>
-    <Popup />
   </div>
 </template>
 
